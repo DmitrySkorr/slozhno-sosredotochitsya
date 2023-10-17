@@ -2,3 +2,31 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --font-style: 'IBM Plex mono';
+  --page-padding: 10px;
+  --section__1__top: 40px;
+  --section__2__top: 40px;
+  --section__4__top: 50px;
+  --gallery__gap: 10px;
+
+}
+@media (width >= 768px) {
+  .page{
+  --page-padding:20px; 
+  }
+  .section__1 {
+    --section__1__top: 60px;
+  }
+  .section__2 {
+    --section__2__top: 70px;
+  }
+  .section__3 {
+    display: grid;
+    --section__2__top: 70px;
+  }
+  .gallery {
+    --section__4__top: 80px;
+    --gallery__gap: 20px;
+  }
+}
