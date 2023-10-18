@@ -1,22 +1,77 @@
-
 .header__theme-menu {
   justify-self: end;
   display: grid;
   margin-top: clamp(4.78125rem, -2.1963rem + 29.771vw, 12.09375rem);
 }
+.decorated-zone {
+  position: relative;
+}
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--section_h2-color);
+  border-left: 1px solid var(--section_h2-color);
+  top: 95vh;
+}
+.round {
+  display: flex;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: var(--rec-color);
+  border-radius: 50%;
+  fill: var(--rec-color);
+  filter: drop-shadow(0px 0px 4px var(--rec-color));
+  right: calc(0.5 * var(--page-padding));
+  top: calc(1.4 * var(--page-padding));
+}
+.rec {
+  font-family: var(--font-style);
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--rec-color);
+  position: absolute;
+  top: var(--page-padding);
+  right: 30px;
+}
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--section_h2-color);
+  border-right: 1px solid var(--section_h2-color);
+  top: var(--page-padding);
+  right: 0vw;
+}
 .header__theme-menu-button {
   display: flex;
   background-color: transparent;
   border: none;
-  padding: 0px 13px;
+  margin: 13px;
   color: var(--accent-color);
 }
 .header__theme-menu-item {
   height: 26px;
   width: 70px;
 }
-.header__theme-menu-item:last-child {
-  border: 1px solid var(--accent-color);
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid #FF0070;
+
+}
+.header__theme-menu-button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+.header__theme-menu-button:focus {
+  outline: none;
+}
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--section_h2-color);
 }
 .page {
   padding-left: var(--page-padding);
@@ -28,6 +83,11 @@
   background-size: cover;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+@media (width >= 768px) {
+  .page{
+  --page-padding:20px; 
+  }}
 .header {
   display: grid;
   grid-template-columns: 1fr;
@@ -43,7 +103,7 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   font-weight: 700;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 #FF0070;
   color: var(--H1-color);
 }
 .description_container {
@@ -98,7 +158,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  color: var(--accent-color);
+  color: var(--section_h2-color);
 }
 .section_h3-container {
   display: flex;
@@ -219,6 +279,6 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   font-weight: 700;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 #FF0070;
   color: var(--H1-color);
 }
