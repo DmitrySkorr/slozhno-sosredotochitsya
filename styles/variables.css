@@ -9,7 +9,14 @@
   --section__2__top: 40px;
   --section__4__top: 50px;
   --gallery__gap: 10px;
-
+  --accent-color: #FF0070;
+  --section_h2-color: #FF0070;
+  --font-style: 'IBM Plex mono';
+  --page-padding: 10px;
+  --header-p-color: #000028;
+  --H1-color: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --rec-color: #FF0070;
 }
 @media (width >= 768px) {
   .page{
