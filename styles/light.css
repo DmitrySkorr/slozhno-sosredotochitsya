@@ -1,16 +1,4 @@
-:root {
-  --accent-color: #FF8DCB;
-  --font-style: 'IBM Plex mono';
-  --header-p-color: #000028;
-  --H1-color: #FFC2E6;;
-  --main-text-color: #353430;
-  --section_h2-color: #353430;
-  background-image: url(/images/cover-image-light.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  --rec-color: transparent;
-}
+
 .page.theme_light {
   --accent-color: #FF8DCB;
   --font-style: 'IBM Plex mono';
