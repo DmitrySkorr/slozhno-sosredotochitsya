@@ -1,8 +1,3 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 :root {
   --accent-color: #FF0070;
   --section_h2-color:#FF0070;
@@ -11,6 +6,16 @@
   --H1-color: #DB00FF;
   --main-text-color: #F1B2CE;
   --rec-color: #FF0070;
+  --text-shadow: #FF0070;
+  --rec-color: #FF0070;
+  --header-p-color: #000028;
+  --H1-color: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --section_h2-color: #FF0070;
+  --hover-color:  rgba(255, 0, 112, 0.40);
+  --section__h__gallery: #000028;
+  --background-image: url(../images/cover-image-dark.png);
 
 }
 .page.theme_dark {
@@ -21,6 +26,16 @@
   --H1-color: #DB00FF;
   --main-text-color: #F1B2CE;
   --rec-color: #FF0070;
+  --text-shadow: #FF0070;
+  --rec-color: #FF0070;
+  --header-p-color: #000028;
+  --H1-color: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --accent-color: #FF0070;
+  --section_h2-color: #FF0070;
+  --hover-color:  rgba(255, 0, 112, 0.40);
+  --section__h__gallery: #000028;
+  --background-image: url(../images/cover-image-dark.png);
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
