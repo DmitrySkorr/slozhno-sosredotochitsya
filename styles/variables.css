@@ -1,22 +1,10 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   --font-style: 'IBM Plex mono';
   --page-padding: 10px;
   --section__1__top: 40px;
-  --section__2__top: 40px;
-  --section__4__top: 50px;
-  --gallery__gap: 10px;
-  --accent-color: #FF0070;
-  --section_h2-color: #FF0070;
-  --font-style: 'IBM Plex mono';
-  --page-padding: 10px;
-  --header-p-color: #000028;
-  --H1-color: #DB00FF;
-  --main-text-color: #F1B2CE;
-  --rec-color: #FF0070;
+  --section__2__top: 30px;
+  --section__4__top: 40px;
+  --gallery__gap: 10px;  
 }
 @media (width >= 768px) {
   .page{
@@ -26,11 +14,10 @@
     --section__1__top: 60px;
   }
   .section__2 {
-    --section__2__top: 70px;
+    --section__2__top: 60px;
   }
   .section__3 {
     display: grid;
-    --section__2__top: 70px;
   }
   .gallery {
     --section__4__top: 80px;
