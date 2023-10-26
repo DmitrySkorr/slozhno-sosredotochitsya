@@ -1,10 +1,15 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
 .header__theme-menu {
   justify-self: end;
   display: flex;
-  width: fit-content;
+  height: fit-content;
+}
+.header__theme-menu-list {
+  height: fit-content;
 }
 .header__theme-menu-list:first-child {
-  margin-top: clamp(4.75rem, 32.865vh - 8.971rem, 12.063rem);
+  margin-top: clamp(4.488rem, 31.807vw - 3.267rem, 12rem);
 }
 .decorated-zone {
   position: relative;
@@ -19,9 +24,8 @@
   border-left: 1px solid var(--section_h2-color);
   bottom: var(--page-padding);
 }
-
 .rec {
-  font-family: var(--font-style), sans-serif;
+  font-family: var(--font-style);
   font-weight: 400;
   line-height: 25px;
   font-size: 18px;
@@ -58,7 +62,7 @@
   display: flex;
   background-color: transparent;
   border: none;
-  color: var(--accent-color);
+  color: var(--section_h2-color);
   line-height: 18px;
   align-items: center;
   justify-content: center;
@@ -66,8 +70,10 @@
   padding: 0 13px 0 13px;
   height: 26px;
   width: 70px;
-  margin: 13px 0;
   padding-bottom: 4px;
+}
+.header__theme-menu-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .header__theme-menu-button_active {
@@ -86,7 +92,7 @@
 .page {
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
-  font-family: var(--font-style), sans-serif;
+  font-family: var(--font-style);
   background-image: var(--background-image);
   background-attachment: fixed;
   background-position: center;
@@ -124,7 +130,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 10%;
+  margin-bottom: clamp(1.125rem, 18.028vh - 0.1rem, 0.438rem);
 }
 .section__1 {
   display: grid;
@@ -135,22 +141,21 @@
   .page {
     --page-padding: 20px;
   }
-  .section__1 {
-    display: grid;
+  .section_all {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .H1-style {
+    margin-left: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .section_h22 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
-  .section__3 {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .H1-style {
-    margin-left: -20px;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  .description_container {
+    margin-bottom: clamp(8.375rem, 19.531vh - 1rem, 1.5rem);
   }
 }
 @media (width >= 1024px) {
@@ -177,6 +182,7 @@
   }
   .description_container {
     max-width: 491px;
+    margin-bottom: clamp(5.375rem, 19.531vh - 1rem, 1.5rem);
   }
 }
 .section_h2 {
@@ -185,6 +191,9 @@
   font-weight: 700;
   line-height: 23.4px;
   color: var(--section_h2-color);
+}
+.section_text-container {
+  gap: 10px;
 }
 .section_h3-container {
   display: flex;
@@ -199,11 +208,8 @@
 }
 .section_p {
   color: var(--main-text-color);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 23.4px;
-  margin: 10px 0 10px 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .section__2 {
   display: grid;
@@ -211,7 +217,7 @@
   margin-top: var(--section__2__top);
 }
 .section__3 {
-  margin-top: var(--section__2__top);
+  margin-top: var(--section__3__top);
   display: grid;
   gap: 20px;
 }
@@ -220,12 +226,14 @@
   background-color: var(--accent-color);
   margin-top: 20px;
 }
-.section_h4 {
-  color: var(--header-p-color);
+.section_ph {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 23.4px;
+}
+.section_h4 {
+  color: var(--header-p-color);
 }
 .link-in-text {
   text-decoration: none;
@@ -243,7 +251,7 @@
 }
 .gallery {
   margin-top: var(--section__4__top);
-  margin-bottom: var(--section__1__top);
+  margin-bottom: var(--gallery__bottom);
 }
 .gallery_content {
   display: grid;
@@ -323,4 +331,7 @@
   border-left: 1px solid var(--section_h2-color);
   bottom: var(--page-padding);
   left: 0;
+}
+.footer_h {
+  text-shadow: 2px 2px 0 var(--text-shadow);
 }
