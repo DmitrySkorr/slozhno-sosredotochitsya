@@ -1,10 +1,26 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
 :root {
-  --font-style: 'IBM Plex mono';
+  --font-style: 'IBM Plex mono', monospace;
   --page-padding: 10px;
   --section__1__top: 40px;
   --section__2__top: 30px;
-  --section__4__top: 40px;
+  --section__3__top: 30px;
+  --section__4__top: 30px;
   --gallery__gap: 10px;  
+  --gallery__bottom: 40px;
+  --accent-color: #FF0070;
+  --section_h2-color:#FF0070;
+  --header-p-color: #000028;
+  --H1-color: #DB00FF;
+  --main-text-color: #F1B2CE;
+  --rec-color: #FF0070;
+  --text-shadow: #FF0070;
+  --hover-color:  rgba(255, 0, 112, 0.40);
+  --section__h__gallery: #000028;
+  --background-image: url(../images/cover-image-dark.png);
 }
 @media (width >= 768px) {
   .page{
@@ -17,10 +33,14 @@
     --section__2__top: 60px;
   }
   .section__3 {
+    --section__3__top: 60px;
+  }
+  .section__3 {
     display: grid;
   }
   .gallery {
-    --section__4__top: 80px;
+    --section__4__top: 60px;
     --gallery__gap: 20px;
+    --gallery__bottom: 60px;
   }
 }
