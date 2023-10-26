@@ -1,8 +1,14 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_light {
   --accent-color: #FF8DCB;
-  --font-style: 'IBM Plex mono';
+  --font-style: 'IBM Plex mono', monospace;
   --header-p-color: #000028;
-  --H1-color: #FFC2E6;;
+  --H1-color: #FFC2E6;
   --main-text-color: #353430;
   --section_h2-color: #353430;
   --rec-color: transparent;
@@ -16,18 +22,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-:root {
   @media (prefers-color-scheme: light) {
-    --accent-color: #FF8DCB;
-    --font-style: 'IBM Plex mono';
-    --header-p-color: #000028;
-    --H1-color: #FFC2E6;;
-    --main-text-color: #353430;
-    --section_h2-color: #353430;
-    --rec-color: transparent;
-    --hover-color: rgba(50, 49, 45, 0.40);
-    --text-shadow: #FF0070;
-    --section__h__gallery: #353430;
-    --background-image: url(../images/cover-image-light.png);
+    :root {
+      --accent-color: #FF8DCB;
+      --font-style: 'IBM Plex mono', monospace;
+      --header-p-color: #000028;
+      --H1-color: #FFC2E6;;
+      --main-text-color: #353430;
+      --section_h2-color: #353430;
+      --rec-color: transparent;
+      --hover-color: rgba(50, 49, 45, 0.40);
+      --text-shadow: #FF0070;
+      --section__h__gallery: #353430;
+      --background-image: url(../images/cover-image-light.png);
   }
 }
